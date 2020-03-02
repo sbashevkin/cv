@@ -138,6 +138,7 @@ Education {data-icon=graduation-cap data-concise=true}
 print_section(position_data, 'education')
 ```
 
+<br>
 
 
 Research Experience {data-icon=laptop}
@@ -147,7 +148,9 @@ Research Experience {data-icon=laptop}
 print_section(position_data, 'research_positions')
 ```
 
-
+<br>
+<br>
+<br>
 
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -193,19 +196,6 @@ print_text_block(text_blocks, 'data_science_writing_aside')
 ```{r}
 print_section(position_data, 'data_science_writings')
 ```
-
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'about_me_press')
-```
-
-
-<br>
-<br>
 
 
 Selected Press (By)  {data-icon=newspaper}
