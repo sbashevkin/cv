@@ -197,6 +197,13 @@ print_text_block(text_blocks, 'data_science_writing_aside')
 print_section(position_data, 'data_science_writings')
 ```
 
+Selected Press (About)  {data-icon=film}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'about_me_press')
+```
+
 
 Selected Press (By)  {data-icon=newspaper}
 --------------------------------------------------------------------------------
@@ -206,12 +213,33 @@ print_section(position_data, 'by_me_press')
 ```
 
 
-
-Selected Publications, Posters, and Talks {data-icon=book}
+Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'academic_articles')
+```
+
+Other Publications {data-icon=scroll}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'other_articles')
+```
+
+
+Acknowledged Articles {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'acknowledged_articles')
+```
+
+Selected Presentations {data-icon=microphone}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'presentation')
 ```
 
 
