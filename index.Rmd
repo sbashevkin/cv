@@ -1,6 +1,6 @@
 ---
-title: "Ryan Peek's CV"
-author: Ryan Peek
+title: "Dr. Ryan Peek"
+author: Ryan Peek, PhD
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -122,7 +122,7 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Ryan Peek {#title}
+Dr. Ryan Peek {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -240,6 +240,22 @@ Selected Presentations {data-icon=microphone}
 
 ```{r}
 print_section(position_data, 'presentation')
+```
+
+
+Service & Leadership {data-icon=hands-helping}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'service')
+```
+
+
+Affiliations & Trainings
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'affiliations')
 ```
 
 
