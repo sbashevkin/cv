@@ -59,7 +59,13 @@ source('parsing_functions.R')
 source('gather_data.R')
 ```
 
+```{css, echo=FALSE, eval=TRUE}
 
+# this removes the sidebar component after the first page.
+.pagedjs_page:not(:first-of-type) {
+  background: white;
+}
+```
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
@@ -98,14 +104,12 @@ contact_info %>%
 ```
 
 
-
 Language Skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
 build_skill_bars(skills)
 ```
-
 
 
 Disclaimer {#disclaimer}
@@ -125,16 +129,15 @@ Main
 Dr. Ryan Peek {#title}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r intro}
 print_text_block(text_blocks, 'intro')
 ```
-
 
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r education}
 print_section(position_data, 'education')
 ```
 
@@ -144,63 +147,71 @@ print_section(position_data, 'education')
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r research}
 print_section(position_data, 'research_positions')
 ```
 
-<br>
-<br>
-<br>
 
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
+<!-- 
 ::: aside
-```{r}
-print_text_block(text_blocks, 'industy_experience_aside')
+```{r industryAside, eval=FALSE}
+print_text_block(text_blocks, 'industry_experience_aside')
 ```
 :::
+-->
 
-```{r}
+```{r industry}
 print_section(position_data, 'industry_positions')
 ```
 
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
 
-
-Teaching Experience {data-icon=chalkboard-teacher}
+Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-print_text_block(text_blocks, 'teaching_experience_aside')
-```
-:::
-
-```{r}
-print_section(position_data, 'teaching_positions')
+```{r acadpubs}
+print_section(position_data, 'academic_articles')
 ```
 
-
+<!-- \pagebreak use this to make a page break where needed -->
 
 Selected Data Science Writing {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
+<!-- 
 ::: aside
-```{r}
+```{r eval=FALSE}
 print_text_block(text_blocks, 'data_science_writing_aside')
 ```
 :::
+-->
 
 ```{r}
 print_section(position_data, 'data_science_writings')
 ```
 
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+<!-- 
+::: aside
+```{r eval=FALSE}
+print_text_block(text_blocks, 'teaching_experience_aside')
+```
+:::
+-->
+
+```{r teaching}
+print_section(position_data, 'teaching_positions')
+```
+
+
 Selected Press (About)  {data-icon=film}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r selectPressBoutMe}
 print_section(position_data, 'about_me_press')
 ```
 
@@ -208,22 +219,15 @@ print_section(position_data, 'about_me_press')
 Selected Press (By)  {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r selectPressByMe}
 print_section(position_data, 'by_me_press')
 ```
 
 
-Selected Publications {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'academic_articles')
-```
-
 Other Publications {data-icon=scroll}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r otherPubs}
 print_section(position_data, 'other_articles')
 ```
 
@@ -231,14 +235,14 @@ print_section(position_data, 'other_articles')
 Acknowledged Articles {data-icon=book}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r acknowledged}
 print_section(position_data, 'acknowledged_articles')
 ```
 
 Selected Presentations {data-icon=microphone}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r presentations}
 print_section(position_data, 'presentation')
 ```
 
@@ -246,7 +250,7 @@ print_section(position_data, 'presentation')
 Service & Leadership {data-icon=hands-helping}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r service}
 print_section(position_data, 'service')
 ```
 
@@ -254,7 +258,7 @@ print_section(position_data, 'service')
 Affiliations & Trainings
 --------------------------------------------------------------------------------
 
-```{r}
+```{r affiliations}
 print_section(position_data, 'affiliations')
 ```
 

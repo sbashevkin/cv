@@ -122,3 +122,27 @@ sup {
   margin: 0.5rem;
   box-shadow: 1px 1px 4px black;
 }
+
+
+/*Add page number to the bottom left of the left and right pages */
+@page :left {
+  @bottom-center {
+    content: counter(page);
+  }
+}
+@page :right {
+  @bottom-center {
+    content: counter(page);
+  }
+}
+
+/* to remove side bar part after first page:
+see here: https://github.com/rstudio/pagedown/issues/147 
+*/
+
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
