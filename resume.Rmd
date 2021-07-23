@@ -101,15 +101,16 @@ Open Source Contributions {#open-source}
 All projects available at `github.com/ryanpeek/<name>`
 
 
-- `aggiedown`: R package for writing dissertation at UC Davis
-- `radseq`: A coarse website for doing RADSeq and Rapture analysis
-- `mapping-in-R-workshop`: A short course for spatial mapping in R
+- `www.r4wrds.com`: R course for water resources data science
+- `{aggiedown}`: R package for writing dissertations at UC Davis
+- `R-DAVIS`: grad course in data science and visualization
+- `mapping-in-R-workshop`: R short course for spatial/GIS topics
 
 
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at ryanpeek.org/cv for more complete list of positions and publications.
+See full CV at ryanpeek.org/cv for complete list of positions & publications.
 
 
 Disclaimer {#disclaimer}
@@ -161,3 +162,16 @@ position_data %>% print_section('writings')
 ```
 
 
+Selected Publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r acadpubs}
+print_section(position_data, 'academic_articles')
+```
+
+Service & Leadership {data-icon=hands-helping}
+--------------------------------------------------------------------------------
+
+```{r service}
+print_section(position_data, 'service')
+```
