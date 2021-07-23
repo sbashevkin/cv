@@ -9,5 +9,5 @@ README.html
 *.html
 
 # ignore the two files
-index.html
-resume.html
+*index.html
+*.html
