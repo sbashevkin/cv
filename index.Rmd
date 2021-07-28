@@ -266,6 +266,12 @@ Service & Leadership {data-icon=hands-helping}
 print_section(position_data, 'service')
 ```
 
+::: aside
+```{r eval=TRUE}
+print_text_block(text_blocks, 'leadership_aside')
+```
+:::
+
 
 Affiliations & Trainings
 --------------------------------------------------------------------------------

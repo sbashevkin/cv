@@ -162,6 +162,22 @@ position_data %>% print_section('writings')
 ```
 
 
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+<!-- 
+::: aside
+```{r eval=FALSE}
+print_text_block(text_blocks, 'teaching_experience_aside')
+```
+:::
+-->
+
+```{r teaching}
+print_section(position_data, 'teaching_positions')
+```
+
+
 Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
@@ -171,6 +187,13 @@ print_section(position_data, 'academic_articles')
 
 Service & Leadership {data-icon=hands-helping}
 --------------------------------------------------------------------------------
+
+::: aside
+```{r eval=TRUE}
+print_text_block(text_blocks, 'leadership_aside')
+```
+:::
+
 
 ```{r service}
 print_section(position_data, 'service')
