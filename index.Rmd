@@ -115,12 +115,11 @@ build_skill_bars(skills)
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with [**{pagedown}**](https://github.com/rstudio/pagedown). 
 
-The source code is available at [github.com/ryanpeek/cv](https://github.com/ryanpeek/cv).
+Code at [github.com/ryanpeek/cv](https://github.com/ryanpeek/cv).
 
 Last updated on `r Sys.Date()`.
-
 
 
 Main
@@ -150,6 +149,19 @@ Research Experience {data-icon=laptop}
 ```{r research}
 print_section(position_data, 'research_positions')
 ```
+
+::: aside
+
+**_OPEN SOURCE CONTRIBUTIONS_**
+
+All projects available at `github.com/ryanpeek/<name>`
+
+ - [www.r4wrds.com](https://www.r4wrds.com): R course for water resources data science
+ - [`{aggiedown}`](https://github.com/ryanpeek/aggiedown): R package for writing dissertations at UC Davis
+ - [R-DAVIS](https://gge-ucd.github.io/R-DAVIS/): grad course in data science and visualization
+ - [Mapping-in-R](https://ryanpeek.org/mapping-in-R-workshop/): short course for spatial/GIS topics
+
+:::
 
 
 Industry Experience {data-icon=suitcase}

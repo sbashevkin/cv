@@ -4,10 +4,9 @@
 resume_files/
 .secrets
 .DS_Store
-
 README.html
 *.html
-
 # ignore the two files
 *index.html
 *.html
+/Users/rapeek/Documents/github/cv/.secrets
