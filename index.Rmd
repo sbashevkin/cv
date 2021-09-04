@@ -192,13 +192,12 @@ print_section(position_data, 'academic_articles')
 Selected Data Science Writing {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
-<!-- 
+
 ::: aside
-```{r eval=FALSE}
+```{r eval=TRUE}
 print_text_block(text_blocks, 'data_science_writing_aside')
 ```
 :::
--->
 
 ```{r}
 print_section(position_data, 'data_science_writings')
@@ -207,13 +206,11 @@ print_section(position_data, 'data_science_writings')
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-<!-- 
 ::: aside
-```{r eval=FALSE}
+```{r eval=TRUE}
 print_text_block(text_blocks, 'teaching_experience_aside')
 ```
 :::
--->
 
 ```{r teaching}
 print_section(position_data, 'teaching_positions')
@@ -262,15 +259,17 @@ print_section(position_data, 'presentation')
 Service & Leadership {data-icon=hands-helping}
 --------------------------------------------------------------------------------
 
-```{r service}
-print_section(position_data, 'service')
-```
-
 ::: aside
 ```{r eval=TRUE}
 print_text_block(text_blocks, 'leadership_aside')
 ```
 :::
+
+
+```{r service}
+print_section(position_data, 'service')
+```
+
 
 
 Affiliations & Trainings
