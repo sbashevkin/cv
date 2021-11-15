@@ -16,8 +16,8 @@ if(using_googlesheets){
     
     # Need to run this once before knitting to cache an authentication token
     # auth for sheets for readonly
-    #googlesheets4::gs4_auth(email = "rapeek@ucdavis.edu", cache = here::here(".secrets"),
-    #         scopes = "https://www.googleapis.com/auth/spreadsheets.readonly")
+    googlesheets4::gs4_auth(email = "rapeek@ucdavis.edu", cache = here::here(".secrets"),
+                            scopes = "https://www.googleapis.com/auth/spreadsheets.readonly")
   }
   
   
