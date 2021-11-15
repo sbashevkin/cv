@@ -9,3 +9,4 @@ README.html
 *index.html
 *.html
 /Users/rapeek/Documents/github/cv/.secrets
+.secrets/*
