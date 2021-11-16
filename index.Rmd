@@ -140,8 +140,6 @@ Education {data-icon=graduation-cap data-concise=true}
 print_section(position_data, 'education')
 ```
 
-<br>
-
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -203,6 +201,8 @@ print_text_block(text_blocks, 'data_science_writing_aside')
 print_section(position_data, 'data_science_writings')
 ```
 
+\pagebreak
+
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
@@ -240,6 +240,7 @@ Other Publications {data-icon=book}
 print_section(position_data, 'other_articles')
 ```
 
+<br>
 
 Acknowledged Articles {data-icon=book}
 --------------------------------------------------------------------------------
@@ -247,6 +248,8 @@ Acknowledged Articles {data-icon=book}
 ```{r acknowledged}
 print_section(position_data, 'acknowledged_articles')
 ```
+
+\pagebreak
 
 Selected Presentations {data-icon=microphone}
 --------------------------------------------------------------------------------
