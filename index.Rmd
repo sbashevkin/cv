@@ -1,12 +1,13 @@
 ---
-title: "Dr. Ryan Peek"
-author: Ryan Peek, PhD
+title: "Dr. Sam Bashevkin"
+author: Sam Bashevkin, PhD
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
+knit: pagedown::chrome_print
 ---
 
 ```{r, include=FALSE}
@@ -27,7 +28,7 @@ library(tidyverse)
 using_googlesheets <- TRUE
 
 # Just the copied URL from the sheet
-positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/1S5al5nRok8JuYBlf2mx43OoHI3p4QvZ4TrSAf-6Cjf8"
+positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/1SaKckeNT8Q45UUPMVPziepoCXjwzUVn_pYPnqXWoJ64/edit#gid=917338460"
 
 # Is this sheet available for anyone to read? If you're using a private sheet
 # set this to false and go to gather_data.R and run the data loading manually
@@ -40,8 +41,8 @@ sheet_is_publicly_readable <- FALSE
 PDF_EXPORT <- FALSE
 
 
-CV_PDF_LOC <- "https://ryanpeek.org/img/peek_cv.pdf"
-CV_HTML_LOC <- "ryanpeek.org/cv/"
+CV_PDF_LOC <- "sbashevkin.pdf"
+CV_HTML_LOC <- "sbashevkin"
 
 
 # A global (gasp) variable that holds all the links that were inserted for
@@ -84,7 +85,8 @@ Aside
 ================================================================================
 
 
-![logo](flare_helix.png){width=100%}
+![logo](IMG_6696 edited_2 copy.JPG){width=100%}
+Megalopa larva of the Panamanian crab *Pitho laevigata*
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
@@ -117,7 +119,7 @@ Disclaimer {#disclaimer}
 
 Made with [**{pagedown}**](https://github.com/rstudio/pagedown). 
 
-Code at [github.com/ryanpeek/cv](https://github.com/ryanpeek/cv).
+Code at [github.com/sbashevkin/cv](https://github.com/sbashevkin/cv).
 
 Last updated on `r Sys.Date()`.
 
@@ -125,7 +127,7 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Dr. Ryan Peek {#title}
+Dr. Sam Bashevkin {#title}
 --------------------------------------------------------------------------------
 
 ```{r intro}
@@ -150,15 +152,11 @@ print_section(position_data, 'research_positions')
 
 ::: aside
 
-**_OPEN SOURCE CONTRIBUTIONS_**
+**_R packages_**
 
-All projects available at `github.com/ryanpeek/<name>`
-
- - [www.r4wrds.com](https://www.r4wrds.com): R course for water resources data science
- - [`{aggiedown}`](https://github.com/ryanpeek/aggiedown): R package for writing dissertations at UC Davis
- - [R-DAVIS](https://gge-ucd.github.io/R-DAVIS/): grad course in data science and visualization
- - [Mapping-in-R](https://ryanpeek.org/mapping-in-R-workshop/): short course for spatial/GIS topics
-
+ - [`deltafish`: An integrated fish database](https://github.com/Delta-Stewardship-Council/deltafish) 
+ - [`discretewq`: Integrated discrete water quality database](https://github.com/sbashevkin/discretewq)
+ - [`zooper`: Integrated zooplankton database](https://github.com/InteragencyEcologicalProgram/zooper)
 :::
 
 
@@ -181,36 +179,39 @@ print_section(position_data, 'industry_positions')
 Journal Articles {data-icon=book}
 --------------------------------------------------------------------------------
 
+::: aside
+```{r eval=TRUE}
+print_text_block(text_blocks, 'academic_articles_aside')
+```
+:::
+
 ```{r acadpubs}
 print_section(position_data, 'academic_articles')
 ```
 
 <!-- \pagebreak use this to make a page break where needed -->
 
-Selected Data Science Writing {data-icon=chart-line}
+Other Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
-
 ::: aside
-```{r eval=TRUE}
-print_text_block(text_blocks, 'data_science_writing_aside')
-```
+
+**_Shiny apps_**
+
+ - [Delta Science Program shiny apps homepage](https://deltascience.shinyapps.io/Home/)
+ - [Integrated zooplankton dataset Shiny App](https://deltascience.shinyapps.io/ZoopSynth)
+ - [San Francisco Estuary Monitoring Shiny App](https://deltascience.shinyapps.io/monitoring)
+ - [Discrete water temperature app](https://deltascience.shinyapps.io/DiscreteTemp)
+ 
 :::
 
-```{r}
-print_section(position_data, 'data_science_writings')
+```{r otherPubs}
+print_section(position_data, 'other_articles')
 ```
 
-\pagebreak
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
-
-::: aside
-```{r eval=TRUE}
-print_text_block(text_blocks, 'teaching_experience_aside')
-```
-:::
 
 ```{r teaching}
 print_section(position_data, 'teaching_positions')
@@ -224,31 +225,6 @@ Selected Press (About)  {data-icon=film}
 print_section(position_data, 'about_me_press')
 ```
 
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r selectPressByMe}
-print_section(position_data, 'by_me_press')
-```
-
-
-Other Publications {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r otherPubs}
-print_section(position_data, 'other_articles')
-```
-
-<br>
-
-Acknowledged Articles {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r acknowledged}
-print_section(position_data, 'acknowledged_articles')
-```
-
 \pagebreak
 
 Selected Presentations {data-icon=microphone}
@@ -258,31 +234,12 @@ Selected Presentations {data-icon=microphone}
 print_section(position_data, 'presentation')
 ```
 
-
-Service & Leadership {data-icon=hands-helping}
+Professional Trainings
 --------------------------------------------------------------------------------
-
-::: aside
-```{r eval=TRUE}
-print_text_block(text_blocks, 'leadership_aside')
+ 
+```{r trainings}
+print_section(position_data, 'professional_training')
 ```
-:::
-
-
-```{r service}
-print_section(position_data, 'service')
-```
-
-
-
-Affiliations & Trainings
---------------------------------------------------------------------------------
-
-```{r affiliations}
-print_section(position_data, 'affiliations')
-```
-
-
 
 ```{r}
 if(PDF_EXPORT){

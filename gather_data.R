@@ -16,14 +16,14 @@ if(using_googlesheets){
     
     # Need to run this once before knitting to cache an authentication token
     # auth for sheets for readonly
-    googlesheets4::gs4_auth(email = "rapeek@ucdavis.edu", cache = here::here(".secrets"),
+    googlesheets4::gs4_auth(email = "sbashevkin@gmail.com", cache = here::here(".secrets"),
                             scopes = "https://www.googleapis.com/auth/spreadsheets.readonly")
   }
   
   
-  position_data <- read_sheet(positions_sheet_loc, sheet = "positions")
-  skills        <- read_sheet(positions_sheet_loc, sheet = "language_skills")
-  text_blocks   <- read_sheet(positions_sheet_loc, sheet = "text_blocks")
+  position_data <- read_sheet(positions_sheet_loc, sheet = "entries", skip = 1)
+  skills        <- read_sheet(positions_sheet_loc, sheet = "language_skills", skip = 1)
+  text_blocks   <- read_sheet(positions_sheet_loc, sheet = "text_blocks", skip = 1)
   contact_info  <- read_sheet(positions_sheet_loc, sheet = "contact_info", skip = 1)
   
 } else {

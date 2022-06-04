@@ -49,7 +49,10 @@ strip_links_from_cols <- function(data, cols_to_strip){
 print_section <- function(position_data, section_id){
   position_data %>% 
     filter(section == section_id) %>% 
-    arrange(desc(end)) %>% 
+    mutate(end = ifelse(end=="current", format(Sys.Date(), "%Y"), end),
+           end=as.integer(end))%>%
+    arrange(desc(end), Order) %>% 
+    select(-Order)%>%
     mutate(id = 1:n()) %>% 
     pivot_longer(
       starts_with('description'),
