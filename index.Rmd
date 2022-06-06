@@ -154,9 +154,14 @@ print_section(position_data, 'research_positions')
 
 **_R packages_**
 
- - [`deltafish`: An integrated fish database](https://github.com/Delta-Stewardship-Council/deltafish) 
+ - [`deltafish`: Access to an integrated fish database](https://github.com/Delta-Stewardship-Council/deltafish) 
+ - [`deltafish`: Back-end integrated fish database](https://github.com/sbashevkin/LTMRdata)
  - [`discretewq`: Integrated discrete water quality database](https://github.com/sbashevkin/discretewq)
  - [`zooper`: Integrated zooplankton database](https://github.com/InteragencyEcologicalProgram/zooper)
+ - [`spacetools`: Easy spatial tools](https://github.com/sbashevkin/spacetools)
+ - [`deltamapr`: Spatial data for the Bay-Delta](https://github.com/InteragencyEcologicalProgram/deltamapr)
+ - [`deltareportr`: Automated reporting for the Bay-Delta](https://github.com/sbashevkin/deltareportr)
+ 
 :::
 
 
