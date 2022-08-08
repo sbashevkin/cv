@@ -88,7 +88,7 @@ Aside
 ![logo](IMG_6696 edited_2 copy.JPG){width=100%}
 Megalopa larva of the Panamanian crab *Pitho laevigata*
 
-```{r}
+```{r, echo = FALSE, eval = FALSE}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
   glue("View this CV online with links at _{CV_HTML_LOC}_")
@@ -143,12 +143,22 @@ print_section(position_data, 'education')
 ```
 
 
-Research Experience {data-icon=laptop}
+Government Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-```{r research}
-print_section(position_data, 'research_positions')
+<!-- 
+::: aside
+```{r industryAside, eval=FALSE}
+print_text_block(text_blocks, 'industry_experience_aside')
 ```
+:::
+-->
+
+```{r industry}
+print_section(position_data, 'industry_positions')
+```
+
+\pagebreak
 
 ::: aside
 
@@ -164,20 +174,11 @@ print_section(position_data, 'research_positions')
  
 :::
 
-
-Industry Experience {data-icon=suitcase}
+Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-<!-- 
-::: aside
-```{r industryAside, eval=FALSE}
-print_text_block(text_blocks, 'industry_experience_aside')
-```
-:::
--->
-
-```{r industry}
-print_section(position_data, 'industry_positions')
+```{r research}
+print_section(position_data, 'research_positions')
 ```
 
 
@@ -214,6 +215,23 @@ Other Publications {data-icon=book}
 print_section(position_data, 'other_articles')
 ```
 
+::: aside
+
+**_Technical skills_**
+
+ * R package development
+ * Unit testing
+ * Development of automated reports and pipelines
+ * Bayesian statistics
+ * Non-linear modeling with generalized additive models
+ * Spatial, temporal, and phylogenetic statistics
+ * Mixed effects modeling
+ * Developing creative solutions to complex data or statistical problems
+ * Data management, metadata, QAQC, publication, and integration
+ * Science communication and outreach to schools, adults, and funders in the USA and Panama
+ * Literature review and synthesis
+ 
+:::
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
