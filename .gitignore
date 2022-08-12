@@ -6,8 +6,8 @@ resume_files/
 README.html
 *.html
 # ignore the two files
-*index.html
+*CV.html
 *.html
-/Users/rapeek/Documents/github/cv/.secrets
 .secrets/*
 /Users/sbashevkin/Documents/cv/.secrets
+IMG_6696 edited_2 copy.JPG
